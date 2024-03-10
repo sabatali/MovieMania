@@ -5,7 +5,7 @@ import logo from '../../../src/assets/movix-logo.png'
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-white py-8">
+        <footer className="bg-gray-900 text-white p-8 ">
             <div className="container mx-auto flex flex-col items-center justify-center">
                 <img src={logo} alt="Logo" className="h-10 mb-4" />
                 <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

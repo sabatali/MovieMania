@@ -2,7 +2,7 @@ import React from "react";
 import DetailsBanner from "./DetailsBanner";
 import { useParams } from "react-router-dom";
 import useFetch from "../../Hooks/useFetch";
-import Cast from "./cast";
+import Cast from "./Cast";
 import VideosSection from "./VideosSection";
 import Similar from "./Similar";
 import Recommendation from "./Recommendation";
@@ -14,7 +14,7 @@ const Details = () => {
     `/${mediaType}/${id}/credits`
   );
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 px-5">
       <DetailsBanner video={data?.results?.[0]} crew={credits?.crew} />
       <Cast data={credits?.cast} loading={creditsLoading}/>
       <VideosSection data={data} loading={loading}/>

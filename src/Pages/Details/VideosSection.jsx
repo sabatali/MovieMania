@@ -26,9 +26,9 @@ const VideosSection = ({ data, loading }) => {
   return (
     <div className="container m-auto">
       <>
-        <div className="text-[20px] font-bold text-white py-9">Official Videos</div>
+        <div className="text-[20px] font-bold text-white text-center sm:text-start py-9">Official Videos</div>
         {!loading ? (
-          <div className="flex gap-7 flex-wrap">
+          <div className="flex gap-7 flex-wrap justify-center sm:justify-start">
             {/* Only display up to displayCount items */}
             {data?.results?.slice(0, displayCount).map((video) => (
               <div

@@ -14,9 +14,9 @@ const Cast = ({ data, loading }) => {
   return (
     <div className="container m-auto">
       <>
-        <div className="text-[20px] font-bold text-white py-8">Top Cast</div>
+        <div className="text-[20px] font-bold text-center sm:text-start text-white py-8">Top Cast</div>
         {!loading ? (
-          <div className="flex flex-wrap items-center">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start">
             {/* Only display up to displayCount items */}
             {data?.slice(0, displayCount).map((item) => {
               let imgUrl = item.profile_path ? url.profile + item.profile_path : avatar;

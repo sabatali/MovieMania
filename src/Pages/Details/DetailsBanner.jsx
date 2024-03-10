@@ -65,10 +65,10 @@ const DetailsBanner = ({ video, crew }) => {
                 <div className="absolute inset-0 bg-[#131926] opacity-90" />
                 <div className="container m-auto py-5">
                   <div className="flex flex-wrap gap-[7%]">
-                    <div className="w-[30%]">
+                    <div className="w-[100%] sm:w-[30%]">
                       <Img src={posterImg || imgFallback} alt={data.name} />
                     </div>
-                    <div className="z-10 w-[60%]">
+                    <div className="z-10 w-[100%] sm:w-[60%]">
                       <h2 className="text-lg font-bold text-start text-white">
                         {`${data.name || data.title} (${dayjs(
                           data?.release_date
