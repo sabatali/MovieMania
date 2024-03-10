@@ -14,7 +14,7 @@ const Trending = () => {
     }
 
     return (
-        <div className='container m-auto'>
+        <div className='container m-auto px-5'>
             <div className='flex justify-between py-[30px]'>
                 <h3 className='text-[20px] font-bold text-white'>Trending</h3>
                 <SwitchTabs data={["Day", "Week"]} onTabChange={onTabChange} />
