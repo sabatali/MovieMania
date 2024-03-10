@@ -164,7 +164,7 @@ const DetailsBanner = ({ video, crew }) => {
                             type="text"
                             onChange={(e) => setInput(e.target.value)}
                             value={input}
-                            placeholder="Enter your message and get details"
+                            placeholder="Enter your query and get details"
                           />
 
                           <button

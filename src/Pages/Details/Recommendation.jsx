@@ -6,6 +6,7 @@ const Recommendation = ({ mediaType, id }) => {
 
     const { data, loading, error } = useFetch(`/${mediaType}/${id}/recommendations`);
 
+    console.log("🚀 ~ Recommendation ~ data:", data)
     const title = mediaType === "tv" ? "Recommendation TV Shows" : "Recommendation Movies";
 
     return (
